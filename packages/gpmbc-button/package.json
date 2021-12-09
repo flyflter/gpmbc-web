@@ -27,8 +27,16 @@
     }
   },
   "lint-staged": {
-    "**/*.js": "eslint --ext .js",
-    "**/*.vue": "eslint --ext .vue"
+    "lib/**/*.js": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "lib/**/*.vue": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
   },
   "bugs": {
     "url": "https://github.com/flyflter/gpmbc-web/issues"
@@ -43,9 +51,11 @@
     "eslint-loader": "^1.7.1",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^3.0.1",
     "eslint-plugin-vue": "^4.0.0",
+    "glob": "^7.2.0",
     "husky": "^1.2.0",
     "lint-staged": "^8.1.0",
     "stylelint": "^9.9.0",
