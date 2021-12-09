@@ -1,5 +1,4 @@
 module.exports = {
-  'packages/**/*.{less,css,md,html}': ['prettier --write'],
-  'packages/**/*.{js,jsx}': ['prettier --write', 'yarn lint:js'],
-  'packages/**/*.{ts,tsx}': ['prettier --write', 'yarn lint:ts'],
-};
+  'packages/gpmbc-button/lib/**/*.{js,jsx}': 'cd packages/gpmbc-button && npm run lint:js',
+  'packages/rollup-ui/src/**/*.{ts,tsx}': 'cd packages/rollup-ui && npm run lint:ts' ,
+}
