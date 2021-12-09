@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/flyflter/gpmbc-web/compare/v0.1.0...v0.2.0) (2021-12-09)
+
+
+### Features
+
+* 是一个测试 ([0aa2c0b](https://github.com/flyflter/gpmbc-web/commit/0aa2c0b345052ad05b080a857963d7cb6ddc7d54))
+
+
+
+
+
 # 0.1.0 (2021-12-09)
 
 
