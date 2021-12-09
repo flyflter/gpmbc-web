@@ -21,13 +21,13 @@
       "path": "./node_modules/cz-lerna-changelog"
     }
   },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
   },
-  "gitHooks": {
-    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS" 
+  "lint-staged": {
+    "**/*.js": "eslint --ext .js",
+    "**/*.vue": "eslint --ext .vue"
   }
 }
