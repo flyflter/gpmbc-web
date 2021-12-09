@@ -5,5 +5,5 @@ module.exports = gpmbcButton;
 function gpmbcButton() {
     // TODO
     const a = "1000"
-    console.log(1233)
+    console.log(126767633)
 }
